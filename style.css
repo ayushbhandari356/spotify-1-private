@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+.body{
+    background-color: back;
+    color:white;
+}
+.border{
+    border: 2px solid red;
+    
+}
+.left{
+    width:25vw;
+    padding:5px;
+}
+.right{
+    width:75vw;
+   
+     
+}
+.home ul li{
+    color:white;
+    width:24px;
+    display:flex;
+    list-style: none;
+    gap:20px;
+    padding-top:20px;
+    font-weight: bold;
+    align-items: center;
+}
+.home{
+    
+}
+.heading{
+    color:white;
+    width:100%;
+    display:flex;
+    list-style: none;
+    gap:15px;
+    padding-top:15px;
+    font-weight: bold;
+    align-items: center;
+    font-size:16px;
+}
+.heading>img{
+    width:24px;
+  
+}
+.footer{
+    display:flex;
+    font-size: 8px;
+    color:grey;
+    gap:14px;
+    position: absolute;
+    bottom:0;
+    padding:34px 0px;
+    
+}
+.footer a{
+    color:grey;
+}
+.right{
+    margin: 8px 0px;
+    position:relative;
+}
+.library{
+    height:64vh;
+    position: relative;
+
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    background-color: #212121;
+    border-radius: 7px 7px 0 0;
+    align-items: center;
+}
+.header> *{
+    padding:10px;
+}
+.prev-svg{
+   
+      display:inline-block;
+      position:relative;
+      width: 12px; /* Adjust the width and height as needed */
+      height: 12px;
+      background-color: #161616; /* Circular grey background color */
+      border-radius: 50%; /* Make the container circular */
+      padding: 9px; 
+      box-sizing: content-box;
+}
+.prev-svg svg {
+    display: block;
+    margin: auto; /* Center the SVG within the container */
+    position: absolute;
+    top: 50%; /* Adjust top position to center vertically */
+    left: 65%; /* Adjust left position to center horizontally */
+    transform: translate(-50%, -50%); /* Center the SVG precisely */
+  }
+.next-svg{
+   
+      display:inline-block;
+      position:relative;
+      width: 12px; /* Adjust the width and height as needed */
+      height: 12px;
+      background-color: #161616; /* Circular grey background color */
+      border-radius: 50%; /* Make the container circular */
+      padding: 9px; 
+      box-sizing: content-box;
+}
+.next-svg svg {
+    display: block;
+    margin: auto; /* Center the SVG within the container */
+    position: absolute;
+    top: 50%; /* Adjust top position to center vertically */
+    left: 38%; /* Adjust left position to center horizontally */
+    transform: translate(-50%, -50%); /* Center the SVG precisely */
+  }
+.spotifyplaylist{
+    padding:16px;
+}
+
+.signupbtn{
+    font-size:18px;
+    cursor: pointer;
+    /* transition can be removed */
+    transition: transform 0.1s ease-out;
+    background-color: #212121;
+    color:rgb(203, 203, 203);
+    border:none;
+    outline:none;
+    font-weight: bold;
+    padding:10px 24px;
+    
+}
+.signupbtn:hover{
+    transform: scale(1.05);
+    color:white;
+}
+.loginbtn{
+    font-size:18px;
+    cursor: pointer;
+    
+    background-color:white;
+    color:black;
+    border:none;
+    outline:none;
+    font-weight: bold;
+    padding:13px 35px;
+    border-radius: 28px;
+    
+    
+}
+.loginbtn:hover{
+    transform: scale(1.05);
+    
+}
+.spotifyplaylist .card{
+    width:135px;
+    padding:10px;
+    background-color: #252525;
+    border-radius:5px;
+    
+}
+.card-container{
+    display:flex;
+    margin: 20px;
+    gap:20px;
+    flex-wrap: wrap;
+    max-height:63vh;
+    overflow-y:scroll;
+}
+.card{
+    position:relative;
+
+}
+.playbutton{
+    position:absolute;
+    right:22px;
+    top:56px;
+    opacity:0;
+    transition:all 1s ease-out;
+
+}
+.card> *{
+    padding-top:10px;
+}
+.card img{
+    width:100%;
+   object-fit: contain;
+   
+}
+.playbar{
+    position:absolute;
+    bottom:0;
+    background-color: rgb(63, 152, 63);
+    width:100%;
+    padding:12px;
+
+}
+.songbuttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:18px;
+}
