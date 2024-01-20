@@ -10,24 +10,32 @@
 </head>
 
 <body>
-    <script src="main.js"></script>
+    
     <div class="container flex bg-black ">
         <div class="left  ">
-
+            <div class="hamburgur_close invert">
+                <img src="img/hamburgur_close.svg" alt="" class="">
+            </div>
             <div class="home bg-grey rounded m1 p1">
-                <img src="logo.svg" alt="logo" class="invert">
+                <img   src="img/logo.svg" alt="logo" class="invert">
                 <ul class="">
-                    <li><img src="home.svg" alt="home" class="invert">Home</li>
-                    <li><img src="search.svg" alt="search" class="invert">Search</li>
+                    <li><img src="img/home.svg" alt="home" class="invert">Home</li>
+                    <li><img src="img/search.svg" alt="search" class="invert">Search</li>
                 </ul>
             </div>
 
 
             <div class="library bg-grey rounded m1 p1 ">
                 <div class="heading">
-                    <img src="playlist.svg" alt="" class="invert">
+                    <img src="img/playlist.svg" alt="" class="invert">
                     <div>Your Library</div>
                 </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+
 
                 <div class="footer">
                     <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
@@ -44,22 +52,28 @@
         </div>
         <div class="right bg-grey rounded   ">
             <div class="header  ">
-                <div class="nav">
+                <div class="mainnav">
 
-                    <div class="prev-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                    <div class="hamburgur invert">
+                        <img src="img/hamburgur.svg" alt="" class="">
+                    </div>
+                    <div class="nav">
+                        
+                        <div class="prev-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M10 19l-7-7 7-7" />
                         </svg>
                     </div>
-
+                    
                     <div class="next-svg">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 5l7 7-7 7" />
-                        </svg>
-                    </div>
-
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 5l7 7-7 7" />
+                    </svg>
+                </div>
+                
+            </div>
 
 
                 </div>
@@ -72,10 +86,11 @@
             <div class="spotifyplaylist">
                 <h1>Spotify Playlist</h1>
                 <div class="card-container">
-                    <div class="card ">
+                    
+                    <div data-folder=cs class="card ">
                         <div class="playbutton">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width: 50px;"
-                                height="100" fill="none">
+                                height="30" fill="none">
                                 <!-- Circular Background -->
                                 <circle cx="50" cy="50" r="50" fill="#02de51" />
 
@@ -85,34 +100,70 @@
 
 
                         </div>
-                        <img src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06" alt="" class="">
-                        <h2>Sleep</h2>
-                        <h5>Gentle Ambient piano to help you fall asleep.</h5>
+                        <img src="https://i.scdn.co/image/ab67616d00001e024cdf85ea439ad82b1b0a69ea" alt="" class="p3 rounded">
+                        <h3>Sleep</h3>
+                        <h6>Gentle Ambient piano to help you fall asleep.</h6>
                     </div>
-                    <div class="card ">
-                        <img src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06" alt="" class="">
-                        <h2>Sleep</h2>
-                        <h5>Gentle Ambient piano to help you fall asleep.</h5>
+                    
+                    
+                    <div data-folder=ncs class="card ">
+                        <div  class="playbutton">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width: 50px;"
+                                height="30" fill="none">
+                                <!-- Circular Background -->
+                                <circle cx="50" cy="50" r="50" fill="#02de51" />
+
+                                <!-- Play Button -->
+                                <path d="M30 25l50 25-50 25z" fill="black" />
+                            </svg>
+
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02678eae35be0325b5de578d57" alt="" class="p3 rounded">
+                        <h3>Adventure</h3>
+                        <h6>Lets Rock The Adventures Life.</h6>
                     </div>
+                    
+                   
+                   
+                   
+                  
+                    
+                   
+
+                     
 
 
                 </div>
                 <div class="playbar">
-                    <div class="songinfo">
+                    <div class="seekbar">
+                        <div class="circle">
 
+                        </div>
                     </div>
-                    <div class="songbuttons">
-                        <img src="previcon.svg" alt="" class="src">
-                        <img src="playicon.svg" alt="" class="src">
-                        <img src="nexticon.svg" alt="" class="src">
-                    </div>
-                    <div class="songtime">
-                        
+                    <div class="songinfobuttontime">
+
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons">
+                            <img id="previous" class="songbutton" src="img/previcon.svg" alt="" class="src">
+                            <img id="play" class="songbutton" src="img/playicon.svg" alt="" class="src">
+                            <img id="next" class="songbutton" src="img/nexticon.svg" alt="" class="src">
+                        </div>
+                        <div class="songtimecover">
+                            <div class="songtime"></div>
+                            <div class="vol invert">
+                                <img width="20" src="img/vol.svg" alt="" class="">
+                                 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

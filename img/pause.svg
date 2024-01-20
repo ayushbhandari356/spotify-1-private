@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/pause-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+    <!-- Circular background -->
+    <circle cx="12" cy="12" r="11" fill="white" />
+
+    <!-- Pause icon -->
+    <g fill="black">
+        <rect x="9" y="6" width="3" height="10" />
+        <rect x="13" y="6" width="3" height="10" />
+    </g>
+</svg>

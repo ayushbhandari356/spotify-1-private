@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
-  <!-- Circular background -->
-  <circle cx="12" cy="12" r="11" fill="white" />
-  
-  <!-- Play icon -->
-  <polygon points="9 6 9 18 18 12" fill="black" />
-</svg>
