@@ -35,6 +35,7 @@ async function getsongs(folder) {
          songs.push(element.href.split(`/${folder}/`)[1]);
         };
     }
+     console.log('songs',songs);
      //show all the song in the playlist
      let songul=document.querySelector(".songlist").getElementsByTagName("ul")[0];
      songul.innerHTML = "";
@@ -92,6 +93,8 @@ async function main() {
    
     // get the list
      await getsongs("songs/cs");
+     console.log('neeche ka song',songs);
+     console.log('p songs',songs[0]);
     playMusic(songs[0],false);
    
 //    display all the albums in the  page
