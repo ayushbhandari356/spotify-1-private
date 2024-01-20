@@ -22,7 +22,7 @@ console.log(timeInMinutesSeconds); // Output: "2:05"
 
 async function getsongs(folder) {
     currfolder=folder;
-    let a = await fetch(`http://127.0.0.1:5500/${folder}`);
+    let a = await fetch(`/${folder}`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -89,7 +89,7 @@ async function main() {
    
     // get the list
      await getsongs("songs/cs");
-    playMusic(songs[2],false);
+    playMusic(songs[0],false);
    
 //    display all the albums in the  page
     // displayAlbum() i am not able to get the songs href instead getting spotify privacy policy anchors tag
