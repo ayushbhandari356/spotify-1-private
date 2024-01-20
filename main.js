@@ -24,7 +24,8 @@ console.log(timeInMinutesSeconds); // Output: "2:05"
 async function getsongs(folder) {
     currfolder=folder;
     let a = await fetch(`/${folder}`);
-    console.log('this should',a);
+    let b= await response.JSON(a);
+    console.log('this should',b);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
