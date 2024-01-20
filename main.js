@@ -68,7 +68,9 @@ async function getsongs(folder) {
 }
 
 const playMusic = (track,pause=false) => {
+    console.log("this is track",track);
     const encodedTrack = encodeURIComponent(track);
+    console.log("encoded track:", encodedTrack);
     const url = `/${currfolder}/` + encodedTrack;
     currentsong.src=`/${currfolder}/` + encodedTrack;
     console.log("Attempting to load:", url);
