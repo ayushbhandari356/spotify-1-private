@@ -1,7 +1,0 @@
- 1)word-wrap: break-word;
-   2) word-break: break-all;
-  3).vol:hover::after{
-    content:"ayush";
-    color:red;
-}  
-4)<input type="range" class="">

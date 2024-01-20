@@ -83,24 +83,6 @@ const playMusic = (track,pause=false) => {
     });
 }
 
-async function displayAlbum(){
-    let a = await fetch(`http://127.0.0.1:5500/songs`);
-    let response = await a.text();
-    let div = document.createElement("div");
-    div.innerHTML = response;
-    let anchors = document.querySelectorAll('.library a');
-
-     
-    console.log("Number of anchor elements:", anchors.length); // Log the number of anchor elements
-
-    Array.from(anchors).forEach(e => {
-         
-        if (e.href.includes("/songs/ ")  ) {
-             
-        }
-    });
-     
-}
 
 async function main() {
    
